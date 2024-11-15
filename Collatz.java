@@ -9,11 +9,11 @@ public class Collatz {
 			{
 				conter=1;
 				n=i;
-				String line=String.valueOf(i);
+				String line="";
 				if (n==1) 
 				{
 					n=4;
-					line=line+ (", "+String.valueOf(n));
+					line=line+ (String.valueOf(n));
 					conter++;
 				}
 				while (n!=1) 
@@ -21,25 +21,22 @@ public class Collatz {
 					if (n%2==0) 
 					{
 						n=n/2;	
-						line=line+ (", "+String.valueOf(n));
+						line=line+ (String.valueOf(n)+", ");
 					}
 					else 
 					{
 						n=(n*3)+1;
-						line=line+ (", "+String.valueOf(n));
+						line=line+ ((String.valueOf(n)+", "));
 					}
 					conter++;
 				}
 				if (choice.equals("v"))
 				{
-					line=line+ (", ("+conter+")");
+					line=line+ ("("+conter+")");
 					System.out.println(line);
 					System.lineSeparator();
 				}
 			}
-			if (choice.equals("c")) 
-			{
-				System.out.println("Every one of the first "+max+" hailstone sequences reached 1.");
-			}
+			System.out.println("Every one of the first "+max+" hailstone sequences reached 1.");
 	}
 }
