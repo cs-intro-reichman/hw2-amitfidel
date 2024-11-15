@@ -5,7 +5,7 @@ public class CalcPi {
 		double calcPie=1.0;
 		double tempCounter=3;
 
-		for (int i=0;i<n;i++)
+		for (int i=2;i<n+2;i++)
 		{
 			if (i%2==0) 
 			{
