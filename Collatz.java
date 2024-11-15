@@ -9,7 +9,7 @@ public class Collatz {
 			{
 				conter=1;
 				n=i;
-				String line="";
+				String line=String.valueOf(n)+" ";
 				if (n==1) 
 				{
 					n=4;
