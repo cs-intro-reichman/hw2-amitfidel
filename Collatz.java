@@ -13,7 +13,7 @@ public class Collatz {
 				if (n==1) 
 				{
 					n=4;
-					line=line+ (String.valueOf(n));
+					line=line+ (String.valueOf(n)+" ");
 					conter++;
 				}
 				while (n!=1) 
@@ -21,12 +21,12 @@ public class Collatz {
 					if (n%2==0) 
 					{
 						n=n/2;	
-						line=line+ (String.valueOf(n)+", ");
+						line=line+ (String.valueOf(n)+" ");
 					}
 					else 
 					{
 						n=(n*3)+1;
-						line=line+ ((String.valueOf(n)+", "));
+						line=line+ ((String.valueOf(n)+" "));
 					}
 					conter++;
 				}
